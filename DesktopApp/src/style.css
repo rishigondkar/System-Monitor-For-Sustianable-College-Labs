@@ -1,0 +1,35 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-color: rgb(30,35,42);
+    color: rgb(80,211,247);
+}
+.main_content {
+    text-align: center;
+}
+h3 {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+}
+h5 {
+    display: inline-block;
+    margin : 25px;
+}
+h5.cpu_usage {
+    font-size: 25px;
+}
+.card-body {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2)
+}
+.btn {
+    display: block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    width: auto;
+}

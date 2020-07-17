@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CPU GRAPH</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      .main
+      {
+        text-align : center;
+      }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <h2>Power Cost : ₹{{power_cost}}</h2>
+    <h2>Saved Cost : ₹{{saved_cost}}</h2><br>
+    <h2>MEMORY USAGE GRAPH</h1>
+    {{my_plot_div}}
+    <H2>CPU USAGE GRAPH</H2>
+    {{cpu2_graph}}
+    <h2>POWER CONSUMED</h2>
+    {{total_power}}
+  </div>
+</body>
+</html>

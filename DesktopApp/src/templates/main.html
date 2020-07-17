@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page</title>
+</head>
+<body>
+    <h3>CPU STATS</h3>
+     <h5 class="cpu_mnf"></h5>
+     <h5 class="cpu_brand"></h5>
+     <h5 class="cpu_speed"></h5>
+     <h5 class="cpu_usage"></h5>
+    <h3>OPERATING SYSTEM</h3>
+     <h5 class="operSys"></h5>
+    <h3>MANUFACTURER INFORMATION</h3>
+     <h5 class="mnf_brand"></h5>
+     <h5 class="mnf_model"></h5>
+    <h3>MEMORY STATS</h3>
+     <h5 class="mem_total"></h5>
+     <h5 class="mem_used"></h5>
+     <h5 class="mem_ava"></h5>
+    <h3 class="up_time"></h3>
+    <h3 class="status">Status</h3>
+    <a href="admin.html">Admin</a>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHa0mDodZI9NwviKk6NwW9i5zSr4vCXJ4",
+    authDomain: "system-monitor-18d0c.firebaseapp.com",
+    databaseURL: "https://system-monitor-18d0c.firebaseio.com",
+    projectId: "system-monitor-18d0c",
+    storageBucket: "system-monitor-18d0c.appspot.com",
+    messagingSenderId: "162450651823",
+    appId: "1:162450651823:web:5e6dd362095ed0f745b25a"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>

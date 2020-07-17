@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(30,35,42);
+    color: rgb(80,211,247);
+    font-weight: 200;
+}
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+input, button {
+   width: 500px;
+   height: 30px;
+   padding: 10px 20px;
+   margin: 20px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+   border: none;
+   outline : none;
+}
+.btn {
+    color: rgb(80,211,247);
+    background-color: rgb(20, 25, 31);
+    color: white;
+    width: auto;
+    font-size: 20px;
+    height: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid rgb(80,211,247); 
+}
+input:focus {
+    outline: none;
+    
+}
+a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}

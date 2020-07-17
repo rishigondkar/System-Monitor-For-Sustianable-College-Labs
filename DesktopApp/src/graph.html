@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+<script>
+let cpu_usage = document.getElementById('cpu_usage')
+
+window.onload = function () {
+	let dps = [];	
+	let chart = new CanvasJS.Chart("chartContainer", {
+		animationEnabled: true,
+		backgroundColor: "rgb(30,35,42)",
+		title :{
+			text: "Dynamic Data",
+			fontColor : "rgb(80,211,247)"
+		},
+		axisX:{
+			crosshair: {
+				enabled: true,
+				snapToDataPoint: true
+			},
+			lineColor : "rgb(80,211,247)",
+			fontColor : "rgb(80,211,247)",
+			labelFontColor: "rgb(80,211,247)",
+			crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+		},
+		axisY:		 {
+			crosshair: {
+				enabled: true,
+				snapToDataPoint: true
+			},
+			crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+			},
+			includeZero: false,
+			lineColor : "rgb(80,211,247)",
+			fontColor : "rgb(80,211,247)",
+			gridColor : "rgba(0,0,0,0)",
+			labelFontColor: "rgb(80,211,247)",
+
+		},      
+		data: [{
+			type: "stepLine",
+			dataPoints: dps,
+			lineColor : "rgb(80,211,247)",
+		}]
+	});
+	var xVal = 0;
+	setInterval(function() {
+		db.collection('LAB').doc('LAB').collection('lab7').doc('pc2').get().then(function (doc){
+			let cpu_usage = document.getElementById('cpu_usage');
+			cpu_usage.innerHTML = doc.data().cpu_usage;
+			 // dataPoints
+		
+		var yVal = 0; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function (count) {
+
+	count = count || 1;
+
+	/*for (var j = 0; j < count; j++) {
+		yVal = parseInt(cpu_usage.innerHTML);
+		dps.push({
+			x: xVal,
+			y: parseInt(cpu_usage.innerHTML)
+		});
+		xVal++;
+	}*/
+	yVal = parseInt(cpu_usage.innerHTML);
+		dps.push({
+			x: xVal,
+			y: parseInt(cpu_usage.innerHTML)
+		});
+		xVal++;
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+		})
+
+	}, 2000)
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width:100%;"></div>
+<div id="cpu_usage"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyBHa0mDodZI9NwviKk6NwW9i5zSr4vCXJ4",
+	  authDomain: "system-monitor-18d0c.firebaseapp.com",
+	  databaseURL: "https://system-monitor-18d0c.firebaseio.com",
+	  projectId: "system-monitor-18d0c",
+	  storageBucket: "",
+	  messagingSenderId: "162450651823",
+	  appId: "1:162450651823:web:de63b76672d94ff845b25a"
+	};
+	firebase.initializeApp(firebaseConfig);
+	const db = firebase.firestore();
+	// Initialize Firebase
+	
+  </script>
+</body>
+</html>
