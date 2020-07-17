@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="PC_info.PC_info"
+    android:background="#DCE0F5">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6734BE"
+        app:titleTextColor="#ffffff"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:theme="@style/ToolbarTheme"/>
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:text="Total Memory:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/tV2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tV1"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV3"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Available\nMemory:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/tV4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@id/tV3"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV5"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Used Memory:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tV5"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:text="CPU Brand:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tV7"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="CPU Speed:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tV9"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            android:text="CPU Usage:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tV11"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="CPU\nManufacturer:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@id/tV13"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Manufacturing\nBrand:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tV16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@id/tV15"
+            android:text=""
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tV17"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:text="Manufacturing\nModel:"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tV18"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toEndOf="@id/tV17"-->
+<!--            android:text=""-->
+<!--            android:textSize="20sp" />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tV19"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:text="Platform:"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tV20"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toEndOf="@id/tV19"-->
+<!--            android:text=""-->
+<!--            android:textSize="20sp" />-->
+
+<!--    </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tV21"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Uptime:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tV22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tV21"
+                android:text=""
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tV23"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Status:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tV24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tV23"
+                android:text=""
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tV25"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Idle:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tV26"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tV25"
+                android:text=""
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width= "275dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/white"
+            android:text="   Shut Down   "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"/>
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/register1"
+            android:layout_width="50dp"
+            android:layout_height="550dp"
+            android:text="   SHUT DOWN   "
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="3000"
+            android:textStyle="bold"
+            app:sub_btn_line_color="#8BC34A"
+            app:sub_btn_ripple_color="#03A9F4"
+            app:sub_btn_tick_color="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <Button
+        android:id="@+id/hibernate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hibernate"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Log-Off"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/hibernate"/>
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <Button
+            android:id="@+id/req_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="Get Screenshot!"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/req_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="Get Photo"
+            android:layout_toRightOf="@id/req_ss"
+            android:layout_marginEnd="40dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

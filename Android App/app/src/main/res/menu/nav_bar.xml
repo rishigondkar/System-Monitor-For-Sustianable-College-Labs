@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_main"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:checked="false" />
+        <item
+            android:id="@+id/pending"
+            android:title="Pending Requests"
+            android:icon="@drawable/ic_watch_later_black_24dp"
+            android:checked="false" />
+        <item
+            android:id="@+id/accepted"
+            android:title="Accepted Requests"
+            android:icon="@drawable/checked"
+            android:checked="false" />
+    </group>
+</menu>
