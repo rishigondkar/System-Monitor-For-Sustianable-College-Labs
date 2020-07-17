@@ -3,4 +3,4 @@
 consumption.
 - The Project also involved creating a webpage to monitor and control (sleep / shutdown / logoff) all the PCs of a college from a
 single screen.
-- All the monitoring is done remotely through a MObile Application.
+- All the monitoring is done remotely through a Mobile Application.
